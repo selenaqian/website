@@ -24,7 +24,7 @@
   });
 </script>
 
-<style lang="scss">
+<style type="text/postcss">
   .heroImage {
     margin: 0 auto 2rem auto;
     border-radius: 1rem;

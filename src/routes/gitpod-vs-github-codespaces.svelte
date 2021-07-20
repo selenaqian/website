@@ -59,9 +59,6 @@
   .mb-7rem {
     margin-bottom: 7rem;
   }
-  .mr-1rem {
-    margin-right: 1rem;
-  }
   .mx-auto {
     margin-left: auto;
     margin-right: auto;
@@ -110,18 +107,12 @@
   .flex-grow {
     flex-grow: 1;
   }
-  .inline-block {
-    display: inline-block;
-  }
   .text-center {
     text-align: center;
   }
   .text-xl {
     font-size: 1.25rem;
     line-height: 1.75rem;
-  }
-  .leading-3 {
-    line-height: 0.75rem;
   }
 </style>
 

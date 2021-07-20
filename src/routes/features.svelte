@@ -17,10 +17,6 @@
 </script>
 
 <style lang="scss">
-  article {
-    margin-bottom: var(--x-large);
-  }
-
   .double {
     margin-bottom: var(--x-large);
     flex-direction: column-reverse;
@@ -55,10 +51,6 @@
       height: 90px;
     }
 
-    h3 {
-      min-height: 3rem;
-    }
-
     p {
       margin: var(--xx-small) 0;
       font-size: var(--p-small);
@@ -72,16 +64,8 @@
     color: var(--brand-ripe);
   }
 
-  .halfimages .text-large {
-    margin: var(--x-small) 0;
-  }
   .double .h4 {
     margin-bottom: var(--micro);
-  }
-
-  section h3:first-child,
-  section h3:first-child + p {
-    text-align: center;
   }
 
   .brief > img {

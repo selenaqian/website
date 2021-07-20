@@ -35,14 +35,6 @@
   ];
 </script>
 
-<style type="text/postcss">
-  article h2 {
-    @media (min-width: 930px) {
-      @apply pb-medium;
-    }
-  }
-</style>
-
 <header>
   <h1>Gitpod for {currentBrowser} is Now Active</h1>
   <p>The browser extension has been installed</p>
