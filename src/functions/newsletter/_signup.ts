@@ -8,7 +8,7 @@ export const signup = async (body: string): Promise<Response> => {
   analytics.track({
     anonymousId: nanoid(),
     event: 'Signed Up',
-    email: body,
+    email_untrusted: body,
     signup_at: new Date().toISOString(),
   });
 
