@@ -1,15 +1,17 @@
+import Analytics from 'analytics-node';
 import type { Response } from "@netlify/functions/src/function/response";
 import saveEmailInSheet from "../feedback/_save-to-spreadsheet";
 
+const analytics = new Analytics('14WvAwP23g2AZddYGxblnp1BbVAErnsy');
+
 export const signup = async (body: string): Promise<Response> => {
-  const isSavedInSheet = await saveEmailInSheet({
-    sheetTitle: "Newsletter - Signups",
-    data: [body],
+  analytics.track("newsletter signup", {
+    email: body,
+    signup_at: new Date().toISOString(),
   });
 
-  const statusCode = isSavedInSheet ? 201 : 500;
   return {
-    statusCode,
-    body: statusCode === 201 ? "Signed up" : "Oh no, something failed.",
+    statusCode: 201,
+    body: "Signed up",
   };
 };
