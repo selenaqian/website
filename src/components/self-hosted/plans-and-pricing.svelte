@@ -1,6 +1,5 @@
 <script lang="ts">
   import { pricingPlans } from "../../contents/self-hosted";
-  import Section from "../section.svelte";
   import PricingBoxes from "../pricing/pricing-boxes.svelte";
 
   export let trackingContext: String;

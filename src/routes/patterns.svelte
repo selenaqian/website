@@ -492,7 +492,7 @@
           <label for="zname">Name</label><input
             type="text"
             class="classed"
-            required=""
+            required
             placeholder=" Name"
             id="zname"
           />
@@ -501,9 +501,9 @@
           <label for="zemail">Email</label><input
             type="email"
             class="classed"
-            multiple=""
+            multiple
             placeholder="email addresses"
-            required=""
+            required
             id="zemail"
           />
         </li>
@@ -511,7 +511,7 @@
           <label for="zdob">Birthday</label><input
             type="date"
             class="classed"
-            required=""
+            required
             placeholder="01/01/84"
             id="zdob"
           />
@@ -520,7 +520,7 @@
           <label for="zage">Age</label><input
             type="number"
             class="classed"
-            required=""
+            required
             min="21"
             max="105"
             id="zage"
@@ -558,7 +558,7 @@
             class="classed"
             pattern="@\w*"
             placeholder="@twitter"
-            required=""
+            required
             id="ztweet"
           />
         </li>

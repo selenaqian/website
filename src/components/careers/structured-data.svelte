@@ -1,4 +1,5 @@
 <script lang="ts">
+  // @ts-nocheck
   import { CAREER_EMAIL } from "../../utils/constants";
   import type { Career } from "../../types/career.type";
   export let career: Career;

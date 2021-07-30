@@ -394,7 +394,7 @@
             bind:this={formData.noOfEmployees.el}
           >
             <option class="option">Select</option>
-            {#each ["2-5", "6-20", "21-50", "51-250", "+250"] as n, i}
+            {#each ["2-5", "6-20", "21-50", "51-250", "+250"] as n}
               <option class="option" value={n}>
                 {n}
               </option>

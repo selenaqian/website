@@ -20,6 +20,7 @@
     typeof navigator !== "undefined" &&
     (parseInt(navigator.doNotTrack) === 1 ||
       parseInt(window.doNotTrack) === 1 ||
+      // @ts-ignore
       parseInt(navigator.msDoNotTrack) === 1 ||
       navigator.doNotTrack === "yes");
 
