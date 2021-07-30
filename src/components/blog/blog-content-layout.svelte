@@ -2,7 +2,7 @@
   import Avatars from "../avatars.svelte";
   import RecentArticlesPreview from "./recent-articles-preview.svelte";
   import OpenGraph from "../../components/open-graph.svelte";
-  import { authors } from "../../contents/blog";
+  import { authors, authorSocialMediaLinks } from "../../contents/blog";
   import "../../assets/markdown-commons.scss";
   import NewsletterSignup from "./newsletter-signup.svelte";
 
@@ -31,24 +31,22 @@
     },
     {}
   );
+  
+  const hasATwitterProfile = (author) =>
+    !!authors[author].socialProfiles.twitter;
 
-  const authorSocialMediaLinks = Object.entries(authors).reduce(
-    (displayNames, [username, profile]) => {
-      displayNames[
-        username
-      ] = `https://twitter.com/${profile.socialProfiles.twitter}`;
-      return displayNames;
-    },
-    {}
-  );
+  const writers = author.split(", ");
+
+  const renderTwitterHandles = () => {
+    let result = writers.reduce((acc, current) =>  acc + (hasATwitterProfile(current) ? `@${current}` : authors[current].name) + ', ', '')
+    result = result.substring(0, result.length - 2)
+    return result
+  }
 
   const socialLinks = [
     {
       href: `https://twitter.com/intent/tweet?text=${encodeURIComponent(
-        `${title} by ${author
-          .split(", ")
-          .map((username) => "@" + authors[username].socialProfiles.twitter)
-          .join(", ")} ${blogBaseUrl}${slug}`
+        `${title} by ${renderTwitterHandles()} ${blogBaseUrl}${slug}`
       )}`,
       alt: "Twitter",
       icon: "/svg/brands/twitter.svg",
@@ -107,6 +105,7 @@
         <li>
           <a
             href={link.href}
+            target="_blank"
             on:click={() =>
               window.analytics.track("content_share_clicked", {
                 medium: link.trackingName,
@@ -120,5 +119,5 @@
   </section>
 </div>
 
-<NewsletterSignup />
+<NewsletterSignup class="mx-auto mt-large mb-huge" />
 <RecentArticlesPreview />

@@ -62,8 +62,9 @@ select {
 }
 
 [type="checkbox"] + label::before {
-  content: "✔";
-  @apply h-6 w-8 text-p-small mr-micro p-1 rounded text-center transition border border-solid border-divider;
+  content: "";
+  @apply block h-6 rounded text-center mr-micro transition border border-solid border-divider;
+  flex: 0 0 24px;
   line-height: 1.1;
 }
 
@@ -83,14 +84,20 @@ select {
 [type="checkbox"]:checked + label::before,
 [type="radio"]:checked + label {
   color: var(--black);
-  border: 1px solid #ffb45b;
-  background: #ffb45b;
+  @apply border border-solid border-orange-900 bg-orange-900;
+}
+[type="checkbox"]:checked + label::before {
+  background-image: url("/tick-dark.svg");
+  @apply bg-center;
 }
 [type="checkbox"] + label:hover::before,
 [type="checkbox"] + label:focus::before,
 [type="radio"]:hover + label,
 [type="radio"]:focus + label {
   border-color: var(--dark-grey);
+}
+[type="radio"]:checked + label {
+  @apply border-orange-900;
 }
 [class|="btn"]:disabled {
   background-color: var(--sand-dark);
