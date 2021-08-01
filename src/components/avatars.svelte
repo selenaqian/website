@@ -66,6 +66,7 @@
       target="_blank"
       class:showAvatar
       class="no-underline transition-none {socialMediaLinkClasses}"
+      rel="noreferrer"
     >
       {#if showAvatar}
         <!-- We use the GitHub profile image because the Twitter profile image needs an authenticated API call -->

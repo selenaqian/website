@@ -100,7 +100,9 @@
                 context: "footer",
                 name: "status",
                 url: "https://www.gitpodstatus.com/",
-              })}>Status</a
+            })}
+            rel="noopener"
+          >Status</a
           >
         </li>
       </ul>
