@@ -32,8 +32,9 @@
     "@slack/webhook": "^6.0.0",
     "analytics-node": "^5.0.0",
     "autoprefixer": "^10.2.5",
+    "cookie": "^0.4.1",
     "google-spreadsheet": "^3.1.15",
-    "nano-id": "^1.1.0"
+    "uuid": "^8.3.2"
   },
   "devDependencies": {
     "@netlify/functions": "^0.7.2",

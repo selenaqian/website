@@ -9,3 +9,4 @@ build/
 /lambda/
 static/global.css
 static/styles.css
+.netlify/
