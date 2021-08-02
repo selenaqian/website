@@ -151,7 +151,7 @@
 
   .strikethrough {
     transition: all 0.5s cubic-bezier(0.55, 0, 0.1, 1);
-    color: var(--light-grey);
+    color: var(--dark-grey);
   }
 
   .strikethrough::after {
@@ -169,11 +169,11 @@
   @keyframes strikethrough {
     from {
       transform: scaleX(0);
-      background: var(--light-grey);
+      background: var(--dark-grey);
     }
     to {
       transform: scaleX(1);
-      background: var(--light-grey);
+      background: var(--dark-grey);
     }
   }
 </style>
