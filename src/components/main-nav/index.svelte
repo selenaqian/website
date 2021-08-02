@@ -65,7 +65,7 @@
       aria-label="Gitpod"
       on:click={() => {
         $menuState = !menuState;
-        showHideOverflowY(true);
+        showHideOverflowY(false);
       }}
     >
       <Logo />

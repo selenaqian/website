@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
   // Credit: www.vercel.com/docs 🙏
   import { page } from "$app/stores";
 
@@ -6,6 +6,9 @@
   let note = "";
   let resultMessage;
   let isSubmittedOnce = false;
+  let clazz = "";
+  export { clazz as class };
+  export let type: "docs" | "guides";
 
   const submitFeedback = async () => {
     isSubmittedOnce = true;
@@ -18,7 +21,7 @@
     const response = await fetch("/.netlify/functions/feedback", {
       method: "post",
       body: JSON.stringify({
-        type: "docs",
+        type,
         emotion: selectedEmotion,
         note,
         url: `https://${$page.host + $page.path}`,
@@ -48,7 +51,7 @@
   }
 </style>
 
-<div class="my-huge">
+<div class={clazz}>
   <div
     class="bg-white shadow-normal rounded-2xl max-w-md py-small px-xx-small m-auto"
   >

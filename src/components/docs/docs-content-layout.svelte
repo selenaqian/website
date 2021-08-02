@@ -27,6 +27,6 @@
   <BetaBanner />
   <EditInGitpod />
   <slot />
-  <FeedbackWidget />
+  <FeedbackWidget type="docs" class="my-huge" />
   <PrevNext />
 </div>
