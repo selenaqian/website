@@ -53,6 +53,8 @@ To install Gitpod in your Kubernetes cluster, follow these steps:
 
    ```bash
    helm repo add gitpod.io https://charts.gitpod.io
+   
+   helm repo update
 
    helm install -f values.custom.yaml gitpod gitpod.io/gitpod --version=0.10.0
    ```

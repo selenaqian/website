@@ -79,7 +79,7 @@ export const otherPlans = [
   {
     title: "Student",
     paragraphs: [
-      `For those still learning the ropes, you can get our student plan for <strong>${
+      `For those still learning the ropes, you can get our Unleashed Plan for <strong>${
         isEurope() ? "€8" : "$9"
       } per month.</strong>`,
       `
