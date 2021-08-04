@@ -13,6 +13,7 @@
   import ScreencastPreview from "../../components/screencasts/preview.svelte";
   import YouTubeEmbed from "../../components/youtube-embed.svelte";
   import { hyphenate } from "../../utils/helper";
+  import OpenGraph from "../../components/open-graph.svelte";
 
   export let screencast: ScreencastType;
 </script>
@@ -26,6 +27,13 @@
     @apply mb-small;
   }
 </style>
+
+<OpenGraph
+  data={{
+    description: screencast.description,
+    title: screencast.title,
+  }}
+/>
 
 <header class="header">
   <h1>{screencast.title}</h1>
