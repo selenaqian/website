@@ -1,7 +1,7 @@
 ---
 author: pawlean, mikenikles
 date: Thu, 05 Aug 2021 11:00:00 UTC
-excerpt: DevX
+excerpt: For our first DevX Digest, we explore the evolution of developer experience in the IDE world.
 image: evolution-of-devx.jpg
 slug: the-evolution-of-devx
 subtitle:
