@@ -1,6 +1,6 @@
 ---
 author: pawlean, mikenikles
-date: Thu, 05 Aug 2021 16:00:00 UTC
+date: Thu, 05 Aug 2021 11:00:00 UTC
 excerpt: DevX
 image: evolution-of-devx.jpg
 slug: the-evolution-of-devx
@@ -13,7 +13,7 @@ title: DevX Digest 01 - The evolution of DevX 🌱
   export const prerender = true;
 </script>
 
-Welcome to DevX Digest - the place to hear all about Developer Experience, brought to you by Pauline Narvas [(@paulienuh)](https://twitter.com/paulienuh) and Mike Nikles [(@mikenikles)](https://twitter.com/mikenikles) from Gitpod. You’re reading the first ever newsletter from us 🎉!
+Welcome to **DevX Digest - the place to hear all about Developer Experience**, brought to you by Pauline Narvas [(@paulienuh)](https://twitter.com/paulienuh) and Mike Nikles [(@mikenikles)](https://twitter.com/mikenikles) from Gitpod. You’re reading the first ever newsletter from us 🎉!
 
 ## What is DevX?
 
