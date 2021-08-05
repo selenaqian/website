@@ -168,7 +168,7 @@ export const authors: { [idx: string]: Author } = {
     description:
       "Christin is our Marketing Manager at Gitpod. She is eager to create a great brand experience and favors going the unconventional way. In her free time, she loves to be out in the nature, climbing rocks and practising yoga.",
   },
-  paulinenarvas: {
+  pawlean: {
     name: "Pauline Narvas",
     socialProfiles: {
       github: "pawlean",

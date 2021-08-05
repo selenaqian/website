@@ -1,12 +1,12 @@
 ---
-author: paulinenarvas
+author: pawlean, mikenikles
 date: Thu, 05 Aug 2021 16:00:00 UTC
 excerpt: DevX
-image: evolution-devx.jpg
+image: evolution-of-devx.jpg
 slug: the-evolution-of-devx
 subtitle:
-teaserImage: evolution-devx.jpg
-title: DevX Digest - The Evolution of DevX 🌱
+teaserImage: evolution-of-devx.jpg
+title: DevX Digest 01 - The evolution of DevX 🌱
 ---
 
 <script context="module">
@@ -37,7 +37,7 @@ Has this changed? Yes, that is the short answer to that. You can see that anothe
 
 Classic heavy-weight IDEs, such as Eclipse, were the trailblazers that paved the way for many important DevX improvements. What made it a fantastic experience for developers was how they could vastly customise environments using their extensible plugin system. But they often went a bit too far, by adding tools and abstractions that slowed down the overall experience and ignoring powerful tools like CLIs that were contributed by the various language communities.
 
-[Sven Efftinge](https://twitter.com/svenefftinge) and [Erich Gamma](https://twitter.com/erichgamma) recently talked about this very topic during DevX Conf ([YouTube video](https://www.youtube.com/watch?v=JiBUDS9odA8)). Erich led the original development of the Eclipse IDE. He co-authored the book “Design Patterns: Elements of Reusable Object-Oriented Software” and currently works at Microsoft, where he is the VS Code Dev Lead. Their conversation gave an interesting insight on the history of these IDEs, design decisions made at the time and how that has changed over time influenced by developer experience.
+[Sven Efftinge](https://twitter.com/svenefftinge) and [Erich Gamma](https://twitter.com/erichgamma) recently talked about this very topic during DevX Conf ([YouTube video](https://www.youtube.com/watch?v=JiBUDS9odA8)). Erich led the original development of the Eclipse IDE. He co-authored the book **“Design Patterns: Elements of Reusable Object-Oriented Software”** and currently works at Microsoft, where he is the VS Code Dev Lead. Their conversation gave an interesting insight on the history of these IDEs, design decisions made at the time and how that has changed over time influenced by developer experience.
 
 One thing we know that is certain is that things change.
 
@@ -66,11 +66,11 @@ With this in mind, the next question is, what are some pain points developers ha
 
 Speaking personally, despite massive leaps to VS Code, I still think of roaring loud fans, a burning hot laptop, especially if you were like me -- hanging on to dear life to old tech. Sound familiar? My six-year-old Macbook Pro fits this description.
 
-VS Code with all my extensions ran slow despite it being relatively light compared to other IDEs; my laptop couldn’t handle it. I wasn’t able to start writing code immediately when the creative juices started flowing! Don’t even get me started on the uphill battle of getting the correct developer environment setup (e.g. cloning, installing dependencies on an old, bloated piece of hardware)... At that point, it just wasn’t worth it. So what is the solution?
+VS Code with all my extensions ran slow despite it being relatively light compared to other IDEs; my laptop couldn’t handle it. I wasn’t able to start writing code immediately when the creative juices started flowing! Don’t even get me started on the uphill battle of getting the correct developer environment setup (_e.g. cloning, installing dependencies on an old, bloated piece of hardware_)... At that point, it just wasn’t worth it. So what is the solution?
 
 ## What’s next for developer experience?
 
-Tech has constantly been talking about the power of the cloud in recent years. As Chris Aniszczyk describes in his post, “[Cloud Native predictions for 2021 and beyond.](https://www.aniszczyk.org/2021/01/19/cloud-native-predictions-for-2021-and-beyond/)":
+Tech has constantly been talking about the power of the cloud in recent years. As Chris Aniszczyk describes in his post, ["Cloud Native predictions for 2021 and beyond."](https://www.aniszczyk.org/2021/01/19/cloud-native-predictions-for-2021-and-beyond/):
 
 > “The future will hold that the development lifecycle (code, build, debug) will happen mostly in the cloud versus your local Emacs or VSCode setup. You will end up getting a full dev environment setup for every pull request, pre-configured and connected to their deployment to aid your development and debugging needs.”
 
