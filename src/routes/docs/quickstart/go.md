@@ -9,7 +9,7 @@ title: Go template
 
 # Go Quickstart
 
-Learn how to set-up and understand the benefits of Gitpod **in less than 5 min** with our [Go](https://github.com/gitpod-io/template-golang-cli) template.
+Learn how to set-up and understand the benefits of Gitpod **in less than 5 min** with our [Go Programming Language](https://github.com/gitpod-io/template-golang-cli) template.
 
 The following guide will:
 

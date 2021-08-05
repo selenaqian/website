@@ -12,7 +12,7 @@ export const MENU: MenuEntry[] = [
   M("Introduction", ""),
   M("Quickstart", "quickstart", [
     M("Deno", "quickstart/deno"),
-    M("Go", "quickstart/go"),
+    M("Go Programming Language", "quickstart/go"),
     M("Java Spring", "quickstart/java"),
     M("Node/TypeScript/Express", "quickstart/typescript"),
     M("PHP Drupal", "quickstart/drupal"),
