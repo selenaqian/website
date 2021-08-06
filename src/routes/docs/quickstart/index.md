@@ -26,6 +26,9 @@ Learn how to start using Gitpod on an example project that is hosted on GitHub i
 - [Datasette](/docs/quickstart/datasette)
 - [Nix](/docs/quickstart/nix)
 - [Haskell](/docs/quickstart/haskell)
+- [C](/docs/quickstart/c)
+- [Perl](/docs/quickstart/perl)
+- [Julia](/docs/quickstart/julia)
 
 ## Installing the Gitpod browser extension
 

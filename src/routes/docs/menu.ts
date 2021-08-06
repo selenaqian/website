@@ -26,6 +26,9 @@ export const MENU: MenuEntry[] = [
     M("Datasette", "quickstart/datasette"),
     M("Nix", "quickstart/nix"),
     M("Haskell", "quickstart/haskell"),
+    M("C", "quickstart/c"),
+    M("Perl", "quickstart/perl"),
+    M("Julia", "quickstart/julia"),
   ]),
   M("Getting Started", "getting-started"),
   M("Configure", "configure", [
