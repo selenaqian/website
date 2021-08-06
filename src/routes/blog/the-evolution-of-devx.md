@@ -43,7 +43,7 @@ One thing we know that is certain is that things change.
 
 Eclipse was designed to run extensions on the same process as the core. At the time, this single process architecture made sense. In the spirit of moving fast, this was the quickest way to integrate extensions to the core.
 
-![Source: Stackoverflow Surveys 2015-2019 (professional developers)](../../../static/images/blog/the-evolution-of-devx/Source.png)
+![Source: Stackoverflow Surveys 2015-2019 (professional developers)](../../../static/images/blog/the-evolution-of-devx/source.png)
 _Source: Stackoverflow Surveys 2015-2019 (professional developers)_
 
 However, the more Eclipse grew, including its extensions, the downsides became more apparent. This complex architecture’s side effects often led to slow start-up times, a bloated IDE and extensions depending on specific versions. The mindset of loading everything in the same process implied that every extension had to be written in Java, but what about other languages?
