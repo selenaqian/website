@@ -52,6 +52,8 @@ The extension simply adds a Gitpod button on every project and branch across Git
 
 ![Browser Extension](../../../static/images/docs/browser-extension-lense.png)
 
+If you prefer to not install browser extensions then you can use the Gitpod [browser bookmarklet](/docs/browser-bookmarklet) instead.
+
 For our partner GitLab we have a native integration into their UI that you can enable here.
 
 2. **Add your favorite VS Code themes and extensions**
