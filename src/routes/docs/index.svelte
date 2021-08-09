@@ -1,4 +1,16 @@
-<script>
+<script lang="ts" context="module">
+  export async function load({ session }) {
+    const changelogEntries = session.changelogEntries;
+    return { props: { changelogEntries } };
+  }
+</script>
+
+<script lang="ts">
+  import type { Changelog } from "../../types/changelog.type";
+  export let changelogEntries: Changelog[];
+
+  import EditInGitpod from "../../components/docs/edit-in-gitpod.svelte";
+
   let startCards = [
     {
       title: "Read the docs",
@@ -27,12 +39,14 @@
   ];
 </script>
 
+<EditInGitpod />
+
 <h1 class="mb-3">Getting Started with Gitpod</h1>
-<p class="text-xl lgx:text-2xl mb-10">
+<p class="text-xl lgx:text-xl mb-10">
   Learn Gitpod the way that best matches your learning style.
 </p>
 
-<div class="grid lg:grid-cols-3 gap-6">
+<div class="grid lg:grid-cols-3 gap-6 mb-16">
   {#each startCards as card}
     <section class="flex">
       <div
@@ -49,3 +63,22 @@
     </section>
   {/each}
 </div>
+
+<div>
+  <h2>Changelog</h2>
+  <a href="/changelog">View all the latest updates</a>
+</div>
+<ul class="bg-gray-50 rounded-2xl p-2">
+  {#each changelogEntries as entry}
+    <li>
+      <div>{@html entry.content}</div>
+      <p>
+        {new Date(Date.parse(entry.date)).toLocaleDateString(undefined, {
+          year: "numeric",
+          month: "long",
+          day: "numeric",
+        })}
+      </p>
+    </li>
+  {/each}
+</ul>
