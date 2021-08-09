@@ -37,6 +37,37 @@
       buttonBackground: "bg-yellow-800",
     },
   ];
+
+  let involvmentMethods = [
+    {
+      image: "/svg/logo-textless.svg",
+      alt: "Gitpod logo",
+      title: "Gitpod Community Forum",
+      text: "Connect with members of the Gitpod community.",
+      link: "https://community.gitpod.io/",
+    },
+    {
+      image: "/svg/brands/twitter.svg",
+      alt: "Twitter logo",
+      title: "Twitter",
+      text: "Follow the Gitpod Twitter account for news and updates.",
+      link: "https://www.twitter.com/gitpod",
+    },
+    {
+      image: "/svg/brands/github.svg",
+      alt: "Github logo",
+      title: "GitHub",
+      text: "Open issues and directly contribute to Gitpod.",
+      link: "https://github.com/gitpod-io/gitpod",
+    },
+    {
+      image: "/svg/brands/discourse.svg",
+      alt: "Discord logo",
+      title: "Discord",
+      text: "Join our Discord server to chat with other Gitpod users.",
+      link: "https://www.gitpod.io/chat",
+    },
+  ];
 </script>
 
 <EditInGitpod />
@@ -57,18 +88,21 @@
         <a
           href={card.link}
           class="mt-auto font-semibold {card.buttonBackground} bg-opacity-50 hover:bg-opacity-75 rounded-lg text-white hover:text-white flex-end self-start py-2 px-4"
-          >{card.button}</a
         >
+          {card.button}
+        </a>
+        <!--TODO: if time, add images that appear/disappear-->
       </div>
     </section>
   {/each}
 </div>
 
+<!--TODO: filter content/fix styling-->
 <div>
   <h2>Changelog</h2>
   <a href="/changelog">View all the latest updates</a>
 </div>
-<ul class="bg-gray-50 rounded-2xl p-2">
+<ul class="bg-gray-50 rounded-2xl p-2 mb-16">
   {#each changelogEntries as entry}
     <li>
       <div>{@html entry.content}</div>
@@ -82,3 +116,16 @@
     </li>
   {/each}
 </ul>
+
+<h2>Get Involved</h2>
+<div>
+  {#each involvmentMethods as involve}
+    <a href={involve.link}>
+      <img src={involve.image} alt={involve.alt} />
+      <div>
+        <h5>{involve.title}</h5>
+        <p>{involve.text}</p>
+      </div>
+    </a>
+  {/each}
+</div>
