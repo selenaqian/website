@@ -5,33 +5,47 @@
       text: "Learn how to get Gitpod set up for your project.",
       button: "Start learning",
       link: "/docs/introduction",
+      background: "bg-gradient-to-br from-purple-500 to-indigo-500",
+      buttonBackground: "bg-purple-900",
     },
     {
       title: "Try it",
       text: "Build something with Gitpod using our example project.",
       button: "Start building",
       link: "/docs/quickstart",
+      background: "bg-gradient-to-br from-pink-500 to-red-400",
+      buttonBackground: "bg-red-900",
     },
     {
       title: "Watch the screencasts",
       text: "Learn more about Gitpod directly from the team.",
       button: "Start watching",
       link: "/screencasts",
+      background: "bg-gradient-to-br from-yellow-400 to-yellow-500",
+      buttonBackground: "bg-yellow-800",
     },
   ];
 </script>
 
-<h1>Getting Started with Gitpod</h1>
-<p class="text-xl lgx:text-2xl">
+<h1 class="mb-3">Getting Started with Gitpod</h1>
+<p class="text-xl lgx:text-2xl mb-10">
   Learn Gitpod the way that best matches your learning style.
 </p>
 
-<div>
+<div class="grid lg:grid-cols-3 gap-6">
   {#each startCards as card}
-    <div>
-      <h4>{card.title}</h4>
-      <p>{card.text}</p>
-      <a href={card.link}>{card.button}</a>
-    </div>
+    <section class="flex">
+      <div
+        class="w-full p-4 rounded-2xl {card.background} shadow-lg flex flex-col"
+      >
+        <h4 class="text-white mb-2">{card.title}</h4>
+        <p class="text-white mb-4">{card.text}</p>
+        <a
+          href={card.link}
+          class="mt-auto font-semibold {card.buttonBackground} bg-opacity-50 hover:bg-opacity-75 rounded-lg text-white hover:text-white flex-end self-start py-2 px-4"
+          >{card.button}</a
+        >
+      </div>
+    </section>
   {/each}
 </div>
