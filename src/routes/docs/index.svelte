@@ -70,6 +70,18 @@
   ];
 </script>
 
+<style>
+  ul li div :global(p:not(:nth-child(3))) {
+    display: none;
+  }
+  ul li div :global(h3) {
+    display: none;
+  }
+  ul li div :global(ul) {
+    display: none;
+  }
+</style>
+
 <EditInGitpod />
 
 <h1 class="mb-3">Getting Started with Gitpod</h1>
@@ -97,15 +109,22 @@
   {/each}
 </div>
 
-<!--TODO: filter content/fix styling-->
-<div>
+<!--TODO: fix styling-->
+<div class="sm:flex sm:gap-6 sm:justify-between p-2">
   <h2>Changelog</h2>
-  <a href="/changelog">View all the latest updates</a>
+  <a href="/changelog" class="sm:text-right sm:place-self-center"
+    >View all the latest updates</a
+  >
 </div>
 <ul class="bg-gray-50 rounded-2xl p-2 mb-16">
   {#each changelogEntries as entry}
-    <li>
-      <div>{@html entry.content}</div>
+    <li class="mr-3 ml-3 mb-6">
+      <svg
+        viewBox="0 0 12 12"
+        class="w-3 h-3 mr-6 overflow-visible text-gray-300"
+      >
+        <circle cx="6" cy="6" fill="currentColor" />
+      </svg>
       <p>
         {new Date(Date.parse(entry.date)).toLocaleDateString(undefined, {
           year: "numeric",
@@ -113,6 +132,7 @@
           day: "numeric",
         })}
       </p>
+      <div>{@html entry.content}</div>
     </li>
   {/each}
 </ul>
