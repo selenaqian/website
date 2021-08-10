@@ -96,7 +96,7 @@
   {#each startCards as card}
     <section class="flex">
       <div
-        class="w-full p-4 rounded-2xl {card.background} shadow-lg flex flex-col"
+        class="w-full p-6 rounded-2xl {card.background} shadow-lg flex flex-col"
       >
         <h4 class="text-white mb-2">{card.title}</h4>
         <p class="text-white mb-4">{card.text}</p>
@@ -118,13 +118,13 @@
     >View all the latest updates</a
   >
 </div>
-<ul class="bg-gray-300 rounded-2xl p-2 mb-16">
+<ul class="bg-gray-300 rounded-2xl p-4 pt-8 pb-8 mb-16 flex flex-col gap-6">
   {#each changelogEntries as entry}
-    <li class="m-3 mb-6 grid grid-cols-12">
+    <li class="grid grid-cols-12">
       <span class="flex flex-col col-span-1 justify-self-center">
         <svg
           viewBox="0 0 12 12"
-          class="text-gray-400 w-3 h-3 mr-6 overflow-visible self-center md:self-start md:mt-1 lg:mt-2"
+          class="text-gray-400 w-3 h-3 overflow-visible self-center md:self-start md:mt-1 lg:mt-2"
         >
           <circle cx="6" cy="6" r="6" fill="currentColor" />
         </svg>
@@ -136,7 +136,7 @@
           class="text-gray-400 w-3  overflow-visible self-center col-start-1 md:self-start md:mt-1 lg:mt-2"
         >
           <path
-            d="M 6 0 V 112"
+            d="M 6 6 V 112"
             fill="none"
             stroke-width="2"
             stroke="currentColor"
