@@ -80,6 +80,9 @@
   ul li div :global(ul) {
     display: none;
   }
+  ul li div :global(h2) {
+    font-size: larger;
+  }
 </style>
 
 <EditInGitpod />
@@ -109,30 +112,50 @@
   {/each}
 </div>
 
-<!--TODO: fix styling-->
 <div class="sm:flex sm:gap-6 sm:justify-between p-2">
   <h2>Changelog</h2>
   <a href="/changelog" class="sm:text-right sm:place-self-center"
     >View all the latest updates</a
   >
 </div>
-<ul class="bg-gray-50 rounded-2xl p-2 mb-16">
+<ul class="bg-gray-300 rounded-2xl p-2 mb-16">
   {#each changelogEntries as entry}
-    <li class="mr-3 ml-3 mb-6">
-      <svg
-        viewBox="0 0 12 12"
-        class="w-3 h-3 mr-6 overflow-visible text-gray-300"
-      >
-        <circle cx="6" cy="6" fill="currentColor" />
-      </svg>
-      <p>
-        {new Date(Date.parse(entry.date)).toLocaleDateString(undefined, {
-          year: "numeric",
-          month: "long",
-          day: "numeric",
-        })}
-      </p>
-      <div>{@html entry.content}</div>
+    <li class="m-3 mb-6 grid grid-cols-12">
+      <span class="flex flex-col col-span-1 justify-self-center">
+        <svg
+          viewBox="0 0 12 12"
+          class="text-gray-400 w-3 h-3 mr-6 overflow-visible self-center md:self-start md:mt-1 lg:mt-2"
+        >
+          <circle cx="6" cy="6" r="6" fill="currentColor" />
+        </svg>
+        <svg
+          viewBox="0 0 12 100"
+          width="100%"
+          height="100%"
+          preserveAspectRatio="none"
+          class="text-gray-400 w-3  overflow-visible self-center col-start-1 md:self-start md:mt-1 lg:mt-2"
+        >
+          <path
+            d="M 6 0 V 112"
+            fill="none"
+            stroke-width="2"
+            stroke="currentColor"
+            class="text-gray-400"
+          />
+        </svg>
+      </span>
+      <span class="col-span-11 grid grid-cols-11">
+        <p class="col-span-11 lg:col-span-3">
+          {new Date(Date.parse(entry.date)).toLocaleDateString(undefined, {
+            year: "numeric",
+            month: "long",
+            day: "numeric",
+          })}
+        </p>
+        <div class="mt-3 col-span-11 lg:mt-0 lg:col-span-7 lg:col-start-4">
+          {@html entry.content}
+        </div>
+      </span>
     </li>
   {/each}
 </ul>
