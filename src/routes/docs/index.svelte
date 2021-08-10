@@ -161,10 +161,17 @@
 </ul>
 
 <h2>Get Involved</h2>
-<div>
+<div class="grid grid-cols-2 gap-6">
   {#each involvmentMethods as involve}
-    <a href={involve.link}>
-      <img src={involve.image} alt={involve.alt} />
+    <a
+      href={involve.link}
+      class="flex gap-3 col-span-2 sm:col-span-1 md:col-span-2 lg:col-span-1"
+    >
+      <img
+        src={involve.image}
+        alt={involve.alt}
+        class="w-12 min-w-min self-start"
+      />
       <div>
         <h5>{involve.title}</h5>
         <p>{involve.text}</p>
